@@ -1,6 +1,6 @@
 package com.apitesting.utilities;
 
-import org.apache.http.HttpStatus;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.jayway.restassured.response.Response;
