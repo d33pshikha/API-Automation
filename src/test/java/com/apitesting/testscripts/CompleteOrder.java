@@ -12,11 +12,12 @@ import org.testng.annotations.Test;
 
 import com.apitesting.staticData.Constants;
 import com.apitesting.utilities.APIMethods;
+import com.apitesting.utilities.CommonUtil;
 import com.apitesting.utilities.JSON_Utilities;
-import com.apitesting.utilities.PropertiesUtility;
+import com.apitesting.utilities.MasterTest;
 import com.jayway.restassured.response.Response;
 
-public class CompleteOrder extends PropertiesUtility {
+public class CompleteOrder extends MasterTest {
 
 	private static final Logger log = LogManager.getLogger();
 	String orderID;
@@ -25,13 +26,8 @@ public class CompleteOrder extends PropertiesUtility {
 
 	@Test(priority = 1)
 	public void verify_CompleteOrder_validData() {
-		requestURL = url + orderEndpoint;
-		String requestBody = JSON_Utilities
-				.jsonToString(System.getProperty("user.dir") + Constants.ORDER_JSON_FILEPATH);
-		response = APIMethods.method_POST(requestBody, requestURL);
-
-		// printing response
-		log.info("RESPONSE:" + response.asString());
+		//place order 
+		response = CommonUtil.placeOrder(Constants.ORDER_JSON_FILEPATH);
 
 		// JSON Status Code validation
 		response.then().statusCode(HttpStatus.SC_CREATED);
@@ -80,13 +76,8 @@ public class CompleteOrder extends PropertiesUtility {
 	@Test(priority = 3)
 	public void verify_voilatedFlow_cancelToComplete() {
 
-		requestURL = url + orderEndpoint;
-		String requestBody = JSON_Utilities
-				.jsonToString(System.getProperty("user.dir") + Constants.ORDER_JSON_FILEPATH);
-		response = APIMethods.method_POST(requestBody, requestURL);
-
-		// printing response
-		log.info("RESPONSE:" + response.asString());
+		//place order
+		response = CommonUtil.placeOrder(Constants.ORDER_JSON_FILEPATH);
 
 		// JSON Status Code validation
 		response.then().statusCode(HttpStatus.SC_CREATED);
@@ -111,13 +102,8 @@ public class CompleteOrder extends PropertiesUtility {
 
 	@Test(priority = 4)
 	public void verify_CompleteOrder_assigningToComplete() {
-		requestURL = url + orderEndpoint;
-		String requestBody = JSON_Utilities
-				.jsonToString(System.getProperty("user.dir") + Constants.ORDER_JSON_FILEPATH);
-		response = APIMethods.method_POST(requestBody, requestURL);
-
-		// printing response
-		log.info("RESPONSE:" + response.asString());
+		//place order
+		response = CommonUtil.placeOrder(Constants.ORDER_JSON_FILEPATH);
 
 		// JSON Status Code validation
 		response.then().statusCode(HttpStatus.SC_CREATED);

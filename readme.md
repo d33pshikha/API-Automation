@@ -5,7 +5,7 @@
 3. Api should be running on local machine on localhost i.e. `http://localhost:51544`
 ## How to install & Run 
 1. Please extract the project at your desired path
-1. Go to `/src/main/java/com/apitesting/resources/TestData.properties` file and update configurations. 
+1. Go to `/src/main/java/com/apitesting/resources/Application.properties` file and update configurations. 
 	* Update `url` in application.properties file ,i.e. where api is hosted  e.g. `localhost:51544`
 1. Open the command prompt and go to the project path.
 1. Run `mvn clean install` command to download all dependencies

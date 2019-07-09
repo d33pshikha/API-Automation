@@ -1,166 +1,172 @@
-2019-07-09 15:50:30 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:30 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
-2019-07-09 15:50:33 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":141,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:13 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:13 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":192,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:33 | [verify_placeOrder] | (PlaceOrder.java:38) | RESPONSE:{"id":141,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:15 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"id":192,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:33 | [verify_placeOrder] | (PlaceOrder.java:45) | Created New Order - ID - 141
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}],"orderAt":"2019-09-03T13:00:00.000Z"}
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":142,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:15 | [verify_placeOrder] | (PlaceOrder.java:37) | Created New Order - ID - 192
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}],"orderAt":"2019-09-03T13:00:00.000Z"}
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":193,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:34 | [verify_placeAdvanceOrder_9To5] | (PlaceOrder.java:66) | RESPONSE:{"id":142,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:15 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"id":193,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:34 | [verify_placeAdvanceOrder_9To5] | (PlaceOrder.java:73) | Created New Order - ID - 142
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}],"orderAt":"2019-09-03T03:00:00.000Z"}
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":143,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"497.24","currency":"HKD"}}
+2019-07-09 17:25:15 | [verify_placeAdvanceOrder_9To5] | (PlaceOrder.java:61) | Created New Order - ID - 193
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}],"orderAt":"2019-09-03T03:00:00.000Z"}
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":194,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"497.24","currency":"HKD"}}
 
-2019-07-09 15:50:34 | [verify_placeAdvanceOrder_Not9To5] | (PlaceOrder.java:101) | RESPONSE:{"id":143,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"497.24","currency":"HKD"}}
+2019-07-09 17:25:15 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"id":194,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"497.24","currency":"HKD"}}
 
-2019-07-09 15:50:34 | [verify_placeAdvanceOrder_Not9To5] | (PlaceOrder.java:108) | Created New Order - ID - 143
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stop":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}],"orderAt":"2019-09-03T13:00:00.000Z"}
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"message":"error in field(s): stops"}
+2019-07-09 17:25:15 | [verify_placeAdvanceOrder_Not9To5] | (PlaceOrder.java:94) | Created New Order - ID - 194
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"st":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"message":"error in field(s): stops"}
 
-2019-07-09 15:50:34 | [verify_placeOrder_InvalidJson] | (PlaceOrder.java:137) | RESPONSE:{"message":"error in field(s): stops"}
+2019-07-09 17:25:15 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"message":"error in field(s): stops"}
 
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stop":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}],"orderAt":"2017-09-03T13:00:00.000Z"}
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"message":"error in field(s): stops"}
+2019-07-09 17:25:15 | [verify_placeOrder_InvalidJson] | (PlaceOrder.java:118) | RESPONSE:{"message":"error in field(s): stops"}
 
-2019-07-09 15:50:34 | [verify_PastDate_AdvanceOrder] | (PlaceOrder.java:154) | RESPONSE:{"message":"error in field(s): stops"}
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}],"orderAt":"2017-09-03T13:00:00.000Z"}
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"message":"field orderAt is behind the present time"}
 
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stop":[{"lng":114.124651,"lat":22.344674}]}
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"message":"error in field(s): stops"}
+2019-07-09 17:25:15 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"message":"field orderAt is behind the present time"}
 
-2019-07-09 15:50:34 | [verify_placeOrder_singleEntry] | (PlaceOrder.java:171) | RESPONSE:{"message":"error in field(s): stops"}
+2019-07-09 17:25:15 | [verify_PastDate_AdvanceOrder] | (PlaceOrder.java:130) | RESPONSE:{"message":"field orderAt is behind the present time"}
 
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:34 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
-2019-07-09 15:50:35 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":144,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674}]}
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"message":"error in field(s): stops"}
 
-2019-07-09 15:50:35 | [verify_fetchOrderDetails_Valid] | (FetchOrderDetails.java:35) | RESPONSE:{"id":144,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:15 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"message":"error in field(s): stops"}
 
-2019-07-09 15:50:35 | [verify_fetchOrderDetails_Valid] | (FetchOrderDetails.java:42) | Created New Order - ID - 144
-2019-07-09 15:50:35 | [method_GET] | (APIMethods.java:37) | REQUEST-URL:POST-http://localhost:51544/v1/orders/144
-2019-07-09 15:50:35 | [method_GET] | (APIMethods.java:43) | RESPONSE:{"id":144,"stops":[{"lat":22.344674,"lng":114.124651},{"lat":22.375384,"lng":114.182446},{"lat":22.385669,"lng":114.186962}],"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"},"status":"ASSIGNING","orderDateTime":"2019-07-09T10:20:35Z","createdTime":"2019-07-09T10:20:35Z"}
+2019-07-09 17:25:15 | [verify_placeOrder_singleEntry] | (PlaceOrder.java:142) | RESPONSE:{"message":"error in field(s): stops"}
 
-2019-07-09 15:50:35 | [verify_fetchOrderDetails_Valid] | (FetchOrderDetails.java:50) | RESPONSE:{"id":144,"stops":[{"lat":22.344674,"lng":114.124651},{"lat":22.375384,"lng":114.182446},{"lat":22.385669,"lng":114.186962}],"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"},"status":"ASSIGNING","orderDateTime":"2019-07-09T10:20:35Z","createdTime":"2019-07-09T10:20:35Z"}
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:15 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
+2019-07-09 17:25:16 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":195,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:35 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:35 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
-2019-07-09 15:50:35 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":145,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:16 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"id":195,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:35 | [verify_takeOrderToEndPoint_validData] | (TakeTheOrderEndpoint.java:33) | RESPONSE:{"id":145,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:16 | [verify_fetchOrderDetails_Valid] | (FetchOrderDetails.java:37) | Created New Order - ID - 195
+2019-07-09 17:25:16 | [method_GET] | (APIMethods.java:37) | REQUEST-URL:POST-http://localhost:51544/v1/orders/195
+2019-07-09 17:25:16 | [method_GET] | (APIMethods.java:43) | RESPONSE:{"id":195,"stops":[{"lat":22.344674,"lng":114.124651},{"lat":22.375384,"lng":114.182446},{"lat":22.385669,"lng":114.186962}],"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"},"status":"ASSIGNING","orderDateTime":"2019-07-09T11:55:16Z","createdTime":"2019-07-09T11:55:16Z"}
 
-2019-07-09 15:50:35 | [verify_takeOrderToEndPoint_validData] | (TakeTheOrderEndpoint.java:40) | Created New Order - ID - 145
-2019-07-09 15:50:35 | [method_GET] | (APIMethods.java:37) | REQUEST-URL:POST-http://localhost:51544/v1/orders/145
-2019-07-09 15:50:35 | [method_GET] | (APIMethods.java:43) | RESPONSE:{"id":145,"stops":[{"lat":22.344674,"lng":114.124651},{"lat":22.375384,"lng":114.182446},{"lat":22.385669,"lng":114.186962}],"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"},"status":"ASSIGNING","orderDateTime":"2019-07-09T10:20:35Z","createdTime":"2019-07-09T10:20:35Z"}
+2019-07-09 17:25:16 | [verify_fetchOrderDetails_Valid] | (FetchOrderDetails.java:45) | RESPONSE:{"id":195,"stops":[{"lat":22.344674,"lng":114.124651},{"lat":22.375384,"lng":114.182446},{"lat":22.385669,"lng":114.186962}],"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"},"status":"ASSIGNING","orderDateTime":"2019-07-09T11:55:16Z","createdTime":"2019-07-09T11:55:16Z"}
 
-2019-07-09 15:50:35 | [verify_takeOrderToEndPoint_validData] | (TakeTheOrderEndpoint.java:48) | RESPONSE:{"id":145,"stops":[{"lat":22.344674,"lng":114.124651},{"lat":22.375384,"lng":114.182446},{"lat":22.385669,"lng":114.186962}],"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"},"status":"ASSIGNING","orderDateTime":"2019-07-09T10:20:35Z","createdTime":"2019-07-09T10:20:35Z"}
+2019-07-09 17:25:16 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:16 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
+2019-07-09 17:25:16 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":196,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:35 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/145/take
-2019-07-09 15:50:35 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":145,"status":"ONGOING","ongoingTime":"2019-07-09T10:20:35.4165187Z"}
+2019-07-09 17:25:16 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"id":196,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:35 | [verify_takeOrderToEndPoint_validData] | (TakeTheOrderEndpoint.java:59) | RESPONSE:{"id":145,"status":"ONGOING","ongoingTime":"2019-07-09T10:20:35.4165187Z"}
+2019-07-09 17:25:16 | [verify_takeOrderToEndPoint_validData] | (TakeTheOrderEndpoint.java:35) | Created New Order - ID - 196
+2019-07-09 17:25:16 | [method_GET] | (APIMethods.java:37) | REQUEST-URL:POST-http://localhost:51544/v1/orders/196
+2019-07-09 17:25:16 | [method_GET] | (APIMethods.java:43) | RESPONSE:{"id":196,"stops":[{"lat":22.344674,"lng":114.124651},{"lat":22.375384,"lng":114.182446},{"lat":22.385669,"lng":114.186962}],"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"},"status":"ASSIGNING","orderDateTime":"2019-07-09T11:55:16Z","createdTime":"2019-07-09T11:55:16Z"}
 
-2019-07-09 15:50:35 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/1562667635/take
-2019-07-09 15:50:35 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"ORDER_NOT_FOUND"}
+2019-07-09 17:25:16 | [verify_takeOrderToEndPoint_validData] | (TakeTheOrderEndpoint.java:43) | RESPONSE:{"id":196,"stops":[{"lat":22.344674,"lng":114.124651},{"lat":22.375384,"lng":114.182446},{"lat":22.385669,"lng":114.186962}],"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"},"status":"ASSIGNING","orderDateTime":"2019-07-09T11:55:16Z","createdTime":"2019-07-09T11:55:16Z"}
 
-2019-07-09 15:50:35 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:35 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
-2019-07-09 15:50:35 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":146,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:16 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/196/take
+2019-07-09 17:25:16 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":196,"status":"ONGOING","ongoingTime":"2019-07-09T11:55:16.4510703Z"}
 
-2019-07-09 15:50:35 | [verify_CompleteOrder_validData] | (CompleteOrder.java:34) | RESPONSE:{"id":146,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:16 | [verify_takeOrderToEndPoint_validData] | (TakeTheOrderEndpoint.java:54) | RESPONSE:{"id":196,"status":"ONGOING","ongoingTime":"2019-07-09T11:55:16.4510703Z"}
 
-2019-07-09 15:50:35 | [verify_CompleteOrder_validData] | (CompleteOrder.java:41) | Created New Order - ID - 146
-2019-07-09 15:50:35 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/146/take
-2019-07-09 15:50:35 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":146,"status":"ONGOING","ongoingTime":"2019-07-09T10:20:35.7300961Z"}
+2019-07-09 17:25:16 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/1562673316/take
+2019-07-09 17:25:16 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"ORDER_NOT_FOUND"}
 
-2019-07-09 15:50:35 | [verify_CompleteOrder_validData] | (CompleteOrder.java:48) | RESPONSE:{"id":146,"status":"ONGOING","ongoingTime":"2019-07-09T10:20:35.7300961Z"}
+2019-07-09 17:25:16 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:16 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
+2019-07-09 17:25:16 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":197,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:35 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/146/complete
-2019-07-09 15:50:35 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":146,"status":"COMPLETED","completedAt":"2019-07-09T10:20:35.7649513Z"}
+2019-07-09 17:25:16 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"id":197,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:35 | [verify_CompleteOrder_validData] | (CompleteOrder.java:58) | RESPONSE:{"id":146,"status":"COMPLETED","completedAt":"2019-07-09T10:20:35.7649513Z"}
+2019-07-09 17:25:16 | [verify_CompleteOrder_validData] | (CompleteOrder.java:37) | Created New Order - ID - 197
+2019-07-09 17:25:16 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/197/take
+2019-07-09 17:25:16 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":197,"status":"ONGOING","ongoingTime":"2019-07-09T11:55:16.7737416Z"}
 
-2019-07-09 15:50:35 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/1562667635/complete
-2019-07-09 15:50:35 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"ORDER_NOT_FOUND"}
+2019-07-09 17:25:16 | [verify_CompleteOrder_validData] | (CompleteOrder.java:44) | RESPONSE:{"id":197,"status":"ONGOING","ongoingTime":"2019-07-09T11:55:16.7737416Z"}
 
-2019-07-09 15:50:35 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:35 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
-2019-07-09 15:50:36 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":147,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:16 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/197/complete
+2019-07-09 17:25:16 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":197,"status":"COMPLETED","completedAt":"2019-07-09T11:55:16.7927948Z"}
 
-2019-07-09 15:50:36 | [verify_voilatedFlow_cancelToComplete] | (CompleteOrder.java:89) | RESPONSE:{"id":147,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:16 | [verify_CompleteOrder_validData] | (CompleteOrder.java:54) | RESPONSE:{"id":197,"status":"COMPLETED","completedAt":"2019-07-09T11:55:16.7927948Z"}
 
-2019-07-09 15:50:36 | [verify_voilatedFlow_cancelToComplete] | (CompleteOrder.java:96) | Created New Order - ID - 147
-2019-07-09 15:50:36 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/147/cancel
-2019-07-09 15:50:36 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":147,"status":"CANCELLED","cancelledAt":"2019-07-09T10:20:36.1287792Z"}
+2019-07-09 17:25:16 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/1562673316/complete
+2019-07-09 17:25:16 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"ORDER_NOT_FOUND"}
 
-2019-07-09 15:50:36 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/147/complete
-2019-07-09 15:50:36 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"Order status is not ONGOING"}
+2019-07-09 17:25:16 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:16 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":198,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:36 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:36 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
-2019-07-09 15:50:36 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":148,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:17 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"id":198,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:36 | [verify_CompleteOrder_assigningToComplete] | (CompleteOrder.java:120) | RESPONSE:{"id":148,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:17 | [verify_voilatedFlow_cancelToComplete] | (CompleteOrder.java:87) | Created New Order - ID - 198
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/198/cancel
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":198,"status":"CANCELLED","cancelledAt":"2019-07-09T11:55:17.0644646Z"}
 
-2019-07-09 15:50:36 | [verify_CompleteOrder_assigningToComplete] | (CompleteOrder.java:127) | Created New Order - ID - 148
-2019-07-09 15:50:36 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/148/complete
-2019-07-09 15:50:36 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"Order status is not ONGOING"}
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/198/complete
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"Order status is not ONGOING"}
 
-2019-07-09 15:50:36 | [verify_CompleteOrder_assigningToComplete] | (CompleteOrder.java:134) | RESPONSE:{"message":"Order status is not ONGOING"}
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":199,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:36 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:36 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
-2019-07-09 15:50:36 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":149,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:17 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"id":199,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:36 | [verify_CancelOrder] | (CancelOrder.java:81) | RESPONSE:{"id":149,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:17 | [verify_CompleteOrder_assigningToComplete] | (CompleteOrder.java:113) | Created New Order - ID - 199
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/199/complete
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"Order status is not ONGOING"}
 
-2019-07-09 15:50:36 | [verify_CancelOrder] | (CancelOrder.java:88) | Created New Order - ID - 149
-2019-07-09 15:50:36 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/149/cancel
-2019-07-09 15:50:36 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":149,"status":"CANCELLED","cancelledAt":"2019-07-09T10:20:36.7081591Z"}
+2019-07-09 17:25:17 | [verify_CompleteOrder_assigningToComplete] | (CompleteOrder.java:120) | RESPONSE:{"message":"Order status is not ONGOING"}
 
-2019-07-09 15:50:36 | [verify_CancelOrder] | (CancelOrder.java:96) | RESPONSE:{"id":149,"status":"CANCELLED","cancelledAt":"2019-07-09T10:20:36.7081591Z"}
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":200,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:36 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:36 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
-2019-07-09 15:50:36 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":150,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:17 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"id":200,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:36 | [verify_onGoingToCancelOrder] | (CancelOrder.java:115) | RESPONSE:{"id":150,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:17 | [verify_CancelOrder] | (CancelOrder.java:77) | Created New Order - ID - 200
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/200/cancel
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":200,"status":"CANCELLED","cancelledAt":"2019-07-09T11:55:17.6381913Z"}
 
-2019-07-09 15:50:36 | [verify_onGoingToCancelOrder] | (CancelOrder.java:122) | Created New Order - ID - 150
-2019-07-09 15:50:36 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/150/take
-2019-07-09 15:50:36 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":150,"status":"ONGOING","ongoingTime":"2019-07-09T10:20:36.9745327Z"}
+2019-07-09 17:25:17 | [verify_CancelOrder] | (CancelOrder.java:85) | RESPONSE:{"id":200,"status":"CANCELLED","cancelledAt":"2019-07-09T11:55:17.6381913Z"}
 
-2019-07-09 15:50:36 | [verify_onGoingToCancelOrder] | (CancelOrder.java:129) | RESPONSE:{"id":150,"status":"ONGOING","ongoingTime":"2019-07-09T10:20:36.9745327Z"}
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":201,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:36 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/150/cancel
-2019-07-09 15:50:37 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":150,"status":"CANCELLED","cancelledAt":"2019-07-09T10:20:36.999987Z"}
+2019-07-09 17:25:17 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"id":201,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:37 | [verify_onGoingToCancelOrder] | (CancelOrder.java:140) | RESPONSE:{"id":150,"status":"CANCELLED","cancelledAt":"2019-07-09T10:20:36.999987Z"}
+2019-07-09 17:25:17 | [verify_onGoingToCancelOrder] | (CancelOrder.java:105) | Created New Order - ID - 201
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/201/take
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":201,"status":"ONGOING","ongoingTime":"2019-07-09T11:55:17.9499317Z"}
 
-2019-07-09 15:50:37 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/1562667637/cancel
-2019-07-09 15:50:37 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"ORDER_NOT_FOUND"}
+2019-07-09 17:25:17 | [verify_onGoingToCancelOrder] | (CancelOrder.java:112) | RESPONSE:{"id":201,"status":"ONGOING","ongoingTime":"2019-07-09T11:55:17.9499317Z"}
 
-2019-07-09 15:50:37 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
-2019-07-09 15:50:37 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
-2019-07-09 15:50:37 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":151,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/201/cancel
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":201,"status":"CANCELLED","cancelledAt":"2019-07-09T11:55:17.9685179Z"}
 
-2019-07-09 15:50:37 | [verify_CancelOrder_violatedFlow] | (CancelOrder.java:35) | RESPONSE:{"id":151,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
+2019-07-09 17:25:17 | [verify_onGoingToCancelOrder] | (CancelOrder.java:123) | RESPONSE:{"id":201,"status":"CANCELLED","cancelledAt":"2019-07-09T11:55:17.9685179Z"}
 
-2019-07-09 15:50:37 | [verify_CancelOrder_violatedFlow] | (CancelOrder.java:42) | Created New Order - ID - 151
-2019-07-09 15:50:37 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/151/take
-2019-07-09 15:50:37 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":151,"status":"ONGOING","ongoingTime":"2019-07-09T10:20:37.3192859Z"}
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/1562673317/cancel
+2019-07-09 17:25:17 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"ORDER_NOT_FOUND"}
 
-2019-07-09 15:50:37 | [verify_CancelOrder_violatedFlow] | (CancelOrder.java:49) | RESPONSE:{"id":151,"status":"ONGOING","ongoingTime":"2019-07-09T10:20:37.3192859Z"}
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:19) | REQUEST-URL:POST-http://localhost:51544/v1/orders
+2019-07-09 17:25:17 | [method_POST] | (APIMethods.java:20) | REQUEST-BODY:{"stops":[{"lng":114.124651,"lat":22.344674},{"lng":114.182446,"lat":22.375384},{"lng":114.186962,"lat":22.385669}]}
+2019-07-09 17:25:18 | [method_POST] | (APIMethods.java:27) | RESPONSE:{"id":202,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:37 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/151/complete
-2019-07-09 15:50:37 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":151,"status":"COMPLETED","completedAt":"2019-07-09T10:20:37.3483144Z"}
+2019-07-09 17:25:18 | [placeOrder] | (CommonUtil.java:22) | RESPONSE:{"id":202,"drivingDistancesInMeters":[10600,3081],"fare":{"amount":"312.02","currency":"HKD"}}
 
-2019-07-09 15:50:37 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/151/cancel
-2019-07-09 15:50:37 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"Order status is COMPLETED already"}
+2019-07-09 17:25:18 | [verify_CancelOrder_violatedFlow] | (CancelOrder.java:37) | Created New Order - ID - 202
+2019-07-09 17:25:18 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/202/take
+2019-07-09 17:25:18 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":202,"status":"ONGOING","ongoingTime":"2019-07-09T11:55:18.1730745Z"}
+
+2019-07-09 17:25:18 | [verify_CancelOrder_violatedFlow] | (CancelOrder.java:44) | RESPONSE:{"id":202,"status":"ONGOING","ongoingTime":"2019-07-09T11:55:18.1730745Z"}
+
+2019-07-09 17:25:18 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/202/complete
+2019-07-09 17:25:18 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"id":202,"status":"COMPLETED","completedAt":"2019-07-09T11:55:18.1928673Z"}
+
+2019-07-09 17:25:18 | [method_PUT] | (APIMethods.java:53) | REQUEST-URL:POST-http://localhost:51544/v1/orders/202/cancel
+2019-07-09 17:25:18 | [method_PUT] | (APIMethods.java:61) | RESPONSE:{"message":"Order status is COMPLETED already"}
 

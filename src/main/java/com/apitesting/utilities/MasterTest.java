@@ -3,7 +3,7 @@ package com.apitesting.utilities;
 import org.testng.annotations.BeforeSuite;
 
 
-public class PropertiesUtility {
+public class MasterTest {
 	
 	
 	public static String url;

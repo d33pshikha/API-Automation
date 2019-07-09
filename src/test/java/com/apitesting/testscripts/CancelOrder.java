@@ -12,11 +12,12 @@ import org.testng.annotations.Test;
 
 import com.apitesting.staticData.Constants;
 import com.apitesting.utilities.APIMethods;
+import com.apitesting.utilities.CommonUtil;
 import com.apitesting.utilities.JSON_Utilities;
-import com.apitesting.utilities.PropertiesUtility;
+import com.apitesting.utilities.MasterTest;
 import com.jayway.restassured.response.Response;
 
-public class CancelOrder extends PropertiesUtility {
+public class CancelOrder extends MasterTest {
 
 	private static final Logger log = LogManager.getLogger();
 	String orderID;
@@ -26,13 +27,7 @@ public class CancelOrder extends PropertiesUtility {
 	@Test(priority = 4)
 	public void verify_CancelOrder_violatedFlow() {
 		// Place Order
-		requestURL = url + orderEndpoint;
-		String requestBody = JSON_Utilities
-				.jsonToString(System.getProperty("user.dir") + Constants.ORDER_JSON_FILEPATH);
-		response = APIMethods.method_POST(requestBody, requestURL);
-
-		// printing response
-		log.info("RESPONSE:" + response.asString());
+		response = CommonUtil.placeOrder(Constants.ORDER_JSON_FILEPATH);
 
 		// JSON Status Code validation
 		response.then().statusCode(HttpStatus.SC_CREATED);
@@ -72,13 +67,7 @@ public class CancelOrder extends PropertiesUtility {
 	public void verify_CancelOrder() {
 
 		// Place order
-		requestURL = url + orderEndpoint;
-		String requestBody = JSON_Utilities
-				.jsonToString(System.getProperty("user.dir") + Constants.ORDER_JSON_FILEPATH);
-		Response response = APIMethods.method_POST(requestBody, requestURL);
-
-		// printing response
-		log.info("RESPONSE:" + response.asString());
+		response = CommonUtil.placeOrder(Constants.ORDER_JSON_FILEPATH);
 
 		// JSON Status Code validation
 		response.then().statusCode(HttpStatus.SC_CREATED);
@@ -106,13 +95,7 @@ public class CancelOrder extends PropertiesUtility {
 	public void verify_onGoingToCancelOrder() {
 
 		// Place order
-		requestURL = url + orderEndpoint;
-		String requestBody = JSON_Utilities
-				.jsonToString(System.getProperty("user.dir") + Constants.ORDER_JSON_FILEPATH);
-		Response response = APIMethods.method_POST(requestBody, requestURL);
-
-		// printing response
-		log.info("RESPONSE:" + response.asString());
+		response = CommonUtil.placeOrder(Constants.ORDER_JSON_FILEPATH);
 
 		// JSON Status Code validation
 		response.then().statusCode(HttpStatus.SC_CREATED);
